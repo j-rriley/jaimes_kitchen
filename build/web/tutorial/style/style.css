@@ -1,0 +1,17 @@
+#title {
+    padding:12px;
+    padding-bottom: 0px;
+    font-size:48px;
+    letter-spacing: 1.5px; /* spaces out letters a bit */
+    text-align: center; 
+    padding-bottom: 2rem; 
+    background-color: white;
+}
+
+#navContainer {
+    position: fixed; /* Make it stick/fixed */
+    width: 100%; /* Full width */
+}
+
+#container {
+}

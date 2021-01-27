@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Proof of Concept</title>
+        <link rel="stylesheet" type="text/css" href="style/navBarSlide.css">
+        <link rel="stylesheet" type="text/css" href="style/scrollIndicator.css">
+        <link rel="stylesheet" type="text/css" href="style/flipBox.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+
+        <div id="container">
+            <div id="navContainer">
+                <div id="navbar">
+                    <ul>
+                        <li><a>Breakfast</a></li> 
+                        <li><a>Lunch</a></li> 
+                        <li><a>Dinner</a></li> 
+                        <li><a>Dessert</a></li> 
+                        <li><a>Snack</a></li>
+                    </ul>
+                </div>
+                <div class="header">
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+            </div>
+            </div>
+
+            
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Recipe Info</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Ingredients and Instructions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+
+        </div>
+
+        <script>
+            window.onscroll = function () {
+                myFunction()
+            };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+
+        </script> 
+    </body>
+</html>

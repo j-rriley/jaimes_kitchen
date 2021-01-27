@@ -1,0 +1,20 @@
+#title {
+    padding:12px;
+    padding-bottom: 0px;
+    font-size:20px;
+    letter-spacing: 1.5px; /* spaces out letters a bit */
+    text-align: center; 
+    padding-bottom: 2rem; 
+}
+body { 
+    background-color: rgba(173, 171, 182, 1); /* Color of kitchen appliances */
+    color: black;  /* Body text color */
+    font-family: "Trebuchet MS", "Helvetica", sans-serif; /* no tail font is more readable for small font */
+    font-size:16px;
+    margin-bottom: 100px; 
+}
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}

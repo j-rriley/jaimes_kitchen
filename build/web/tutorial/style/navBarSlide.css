@@ -1,0 +1,30 @@
+#navContainer {
+    margin: auto; 
+}
+
+#navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    width: 30rem; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 100; 
+    top:0;
+}
+
+/* Style the navbar links */
+li {
+    list-style-type: none;
+    float:left; 
+}
+#navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}

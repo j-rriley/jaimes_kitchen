@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+
+            #pid{
+                text-align:center;
+            }
+
+        </style>
+
+        <!-- Use this type of comment within HTML -->
+        <title>Jaime's Kitchen</title>
+
+        <!-- This is the external style sheet link -->
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="style/dropdownStyle.css">
+        <link rel="stylesheet" type="text/css" href="style/slideShows.css">
+        <link rel="stylesheet" type="text/css" href="style/clickSort.css">
+
+
+
+    </head>
+    <body>
+        <div id="titleNav">
+
+            <div id="title">
+                Jaime's Kitchen
+            </div>
+
+            <div id="nav">
+                <div class="dropdown">
+                    <a href="#/home">Home</a>
+                </div>
+                <div class="dropdown">
+                    <div class="dropHeader" onclick="myDropdown.toggle(this)">Account</div>
+                    <div class="dropContent">
+                        <a href ="#/userInsert">Register</a> <br/>
+                        <a href ="#/logOn">Log On</a> <br/>
+                        <a href ="#/getProfile">Profile</a> <br/>
+                        <a href ="#/logOff">Log Off</a>
+                    </div> 
+                </div>
+                <div class="dropdown">
+                    <div class="dropHeader" onclick="myDropdown.toggle(this)">Search</div>
+                    <div class="dropContent">
+                        <a href="#/users">Users</a> <br/>
+                        <a href="#/recipes">Recipes</a> 
+                        <a href="#/slideshow">Slide Shows</a>
+                        <a href="#/liveUsers">Live Users</a>
+                        <a href="#/liveRecipes">Live Recipes</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropHeader" onclick="myDropdown.toggle(this)">Tutorial</div>
+                    <div class="dropContent">
+                        <a target="_blank" href="tutorial/proposal.pdf">Proposal</a> <br/>
+                        <a target="_blank" href="tutorial/poc.html">Proof Of Concept</a> <br/>
+                        <a target="_blank" href="tutorial/index.html">Tutorial Home</a> <br/>
+                        <a target="_blank" href="tutorial/download/demo.html">Demo</a> <br/>
+                    </div> 
+                </div>          
+                <div class="dropdown">
+                    <a href="#/blog">Blog</a> 
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="content">
+
+        </div> <!-- content. [[Keep track of nesting]] -->
+        <div id="footer">
+            Jaime Riley
+        </div>
+        
+        <script src="js/components/home.js"></script>
+        <script src="js/components/blog.js"></script>
+        <script src="js/components/slideShow.js"></script>
+        <script src="js/components/users.js"></script>
+        <script src="js/components/recipes.js"></script>
+        <script src="js/components/webUserList.js"></script>
+        <script src="js/components/recipesList.js"></script>
+        <script src="js/components/account.js"></script>
+        <script src="js/components/webUserMods.js"></script>
+        <script src="js/components/recipesMods.js"></script>
+        <script src="js/reusable/routeParamFw.js"></script>
+        <script src="js/reusable/dropdownFw.js"></script>
+        <script src="js/reusable/MakeSlideShow.js"></script>
+        <script src="js/reusable/ajax.js"></script>
+        <script src="js/reusable/Utils.js"></script>
+        <script src="js/reusable/MakeClickSort.js"></script>
+        <script src="js/CRUD_icons.js"></script>
+        
+        
+        <script>
+                        "use strict";
+                        var myRoutes = [];
+
+                        myRoutes['#/home'] = home;
+                        myRoutes['#/blog'] = blog;
+                        myRoutes['#/slideshow'] = slideShow;
+                        myRoutes['#/users'] = users; 
+                        myRoutes['#/recipes'] = recipes; 
+                        myRoutes['#/liveUsers'] = webUserList;
+                        myRoutes['#/userInsert'] = webUserMods.insert; 
+                        myRoutes['#/userUpdate'] = webUserMods.update; 
+                        myRoutes['#/userDelete'] = webUserMods.delete; 
+                        myRoutes['#/liveRecipes'] = recipesList; 
+                        myRoutes['#/recipesInsert'] = recipesMods.insert; 
+                        myRoutes['#/recipesUpdate'] = recipesMods.update; 
+                        myRoutes['#/recipesDelete'] = recipesMods.delete; 
+                        myRoutes['#/logOn'] = account.logon; 
+                        myRoutes['#/getProfile'] = account.getProfile; 
+                        myRoutes['#/logOff'] = account.logoff; 
+                        
+
+
+                        var myRouteFw = routeParamFw({
+                            routeArray: myRoutes,
+                            contentId: "content",
+                            startLink: "#/home"
+                        });
+                       
+                       var myDropdown = dropdownFw({
+                            dropContentStyle: "dropContent",
+                            hiddenRight: "-500px"
+                        });
+
+
+        </script>
+
+    </body>
+</html>

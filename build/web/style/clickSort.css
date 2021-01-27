@@ -1,0 +1,25 @@
+.clickSort {  /* The reusable code "claims" this one className 
+                 The HTML coder can use these styles (to get default styling)
+                 or change if they want to. */
+    text-align:center;
+
+}
+
+.clickSort table {
+    margin:auto;     /* auto makes left and right margins the same, means centered */
+}
+
+.clickSort td {  /* applies to any <td> tag in any element classed "clickSort" */
+    padding: 0.25rem;
+    background-color: #F2F1CF;
+    font-size:1rem;
+}
+
+.clickSort th {  /* applies to any <th> tag in any element classed "clickSort" */
+    padding:0.25rem;
+    padding-top:0.5rem;
+    background-color: #AFAD31;
+    font-weight: bold;
+    font-size:1.1rem;
+    white-space: nowrap; /* do not want multi word column headings (or sort icon) to wrap */
+}

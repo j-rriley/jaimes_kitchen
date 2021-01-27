@@ -1,0 +1,56 @@
+[
+    {
+        "nickname": "Princess",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic1.png",
+        "birthYear": "2019",
+        "sex": "female"
+    },
+    {
+        "nickname": "Tipsy",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic2.png",
+        "birthYear": "2018",
+        "sex": "male"
+    },
+    {
+        "nickname": "Dynamic Trio",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic3.png",
+        "birthYear": "2020",
+        "sex": "mixed"
+    },
+    {
+        "nickname": "Star",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic4.png",
+        "birthYear": "2018",
+        "sex": "female"
+    },
+    {
+        "nickname": "Tigger",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic5.png",
+        "birthYear": "2017",
+        "sex": "male"
+    },
+    {
+        "nickname": "Super Sleuth",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic6.png",
+        "birthYear": "2019",
+        "sex": "female"
+    },
+    {
+        "nickname": "Egghead",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic7.png",
+        "birthYear": "2020",
+        "sex": "male"
+    },
+    {
+        "nickname": "Jeeves",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic8.png",
+        "birthYear": "2019",
+        "sex": "male"
+    },
+    {
+        "nickname": "Tiny",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_cat/pic9.png",
+        "birthYear": "2020",
+        "sex": "female"
+    }
+]

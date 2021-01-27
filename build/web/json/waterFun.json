@@ -1,0 +1,33 @@
+[
+
+    {
+        "item": "Jet Ski",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_waterFun_jpg/jetski.jpg",
+        "price": "5000"
+    },
+    {
+        "item": "Kayak",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_waterFun_jpg/kayak.jpg",
+        "price": "1000"
+    },
+    {
+        "item": "Pontoon Boat",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_waterFun_jpg/pontoon.jpg",
+        "price": "30000"
+    },
+    {
+        "item": "Sailboat",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_waterFun_jpg/sail.jpg",
+        "price": "15000"
+    },
+    {
+        "item": "Ski Boat",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_waterFun_jpg/skiBoat.jpg",
+        "price": "50000"
+    },
+    {
+        "item": "Lake Vacation",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_waterFun_jpg/sunsetOnLake.jpg",
+        "price": "2000"
+    }
+]

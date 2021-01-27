@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Demo Page</title>
+        <link rel="stylesheet" type="text/css" href="bookletStyle.css">
+
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="widgetContainer1">
+
+        </div>
+        <div id ="widgetContainer2"> 
+        </div>
+        <script src="makeBooklet.js"></script>
+        <script>
+            var carList = [
+                {
+                    "make": "Audi",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/white_audi.png",
+                    "condition": "fair",
+                    "price": "21000"
+                },
+                {
+                    "make": "Disney",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/pixar.png",
+                    "condition": "superb",
+                    "price": "50000"
+                },
+                {
+                    "make": "Buick",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/buick.png",
+                    "condition": "great",
+                    "price": "15000"
+                },
+                {
+                    "make": "Ford",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/ford.png",
+                    "condition": "poor",
+                    "price": "5000"
+                },
+                {
+                    "make": "Audi (Black)",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/black_audi.png",
+                    "condition": "poor",
+                    "price": "5000"
+                },
+                {
+                    "make": "Audi (Blue)",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/blue_audi.png",
+                    "condition": "poor",
+                    "price": "5000"
+                },
+                {
+                    "make": "Beamer",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/bmw.png",
+                    "condition": "poor",
+                    "price": "5000"
+                },
+                {
+                    "make": "Mercedes",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/mercedes.png",
+                    "condition": "poor",
+                    "price": "5000"
+                },
+                {
+                    "make": "Ford (Model T)",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/model_t.png",
+                    "condition": "poor",
+                    "price": "5000"
+                },
+                {
+                    "make": "Audi (Yellow)",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_car/yellow_audi.png",
+                    "condition": "poor",
+                    "price": "5000"
+                }
+            ];
+
+            var firstBooklet = makeBooklet({jsonList : carList,
+                    headingProperty : "condition",
+                    frontInfo : ["make", "price"],
+                    backInfo : ["image"]
+                });
+            firstBooklet.classList.add("plainBooklet");
+            console.log("Here in demo! Heres something");
+
+
+
+            var userList = [
+                {
+                    "webUserId": "1",
+                    "userEmail": "abha@temple.edu",
+                    "userPassword": "pw",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/abha.jpg",
+                    "birthday": "11/22/2001",
+                    "membershipFee": "",
+                    "userRoleId": "3",
+                    "userRoleType": "Member",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "2",
+                    "userEmail": "dominic@temple.edu",
+                    "userPassword": "p",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/dominic.jpg",
+                    "birthday": "",
+                    "membershipFee": "$1,000.99",
+                    "userRoleId": "3",
+                    "userRoleType": "Member",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "228",
+                    "userEmail": "ed@temple.edu",
+                    "userPassword": "pass",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/ed.jpg",
+                    "birthday": "01/02/2003",
+                    "membershipFee": "$123.45",
+                    "userRoleId": "3",
+                    "userRoleType": "Member",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "329",
+                    "userEmail": "eduard@temple.edu",
+                    "userPassword": "pw",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/eduard.jpg",
+                    "birthday": "01/02/2009",
+                    "membershipFee": "$123.67",
+                    "userRoleId": "2",
+                    "userRoleType": "Member",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "343",
+                    "userEmail": "frank@temple.edu",
+                    "userPassword": "pawpaw",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/frank.jpg",
+                    "birthday": "04/05/2015",
+                    "membershipFee": "$5.00",
+                    "userRoleId": "3",
+                    "userRoleType": "Member",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "345",
+                    "userEmail": "james_du@temple.edu",
+                    "userPassword": "password",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/james_du.jpg",
+                    "birthday": "04/14/1997",
+                    "membershipFee": "$0.00",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "346",
+                    "userEmail": "jamie@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/jamie.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "347",
+                    "userEmail": "jie@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/jie.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "348",
+                    "userEmail": "justin@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/justin.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "349",
+                    "userEmail": "karl@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/karl.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "350",
+                    "userEmail": "pei@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/pei.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "351",
+                    "userEmail": "richard_s@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/richard_s.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "352",
+                    "userEmail": "sallyk@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/sallyk.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "353",
+                    "userEmail": "slobodan@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/slobodan.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                },
+                {
+                    "webUserId": "354",
+                    "userEmail": "zoran@gmail.com",
+                    "userPassword": "tasos",
+                    "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/zoran.jpg",
+                    "birthday": "02/02/1997",
+                    "membershipFee": "$9.99",
+                    "userRoleId": "1",
+                    "userRoleType": "Admin",
+                    "errorMsg": ""
+                }
+
+            ];
+            var secondBooklet = makeBooklet({jsonList : userList,
+                    headingProperty : "userRoleType",
+                    frontInfo : ["image", "userEmail"],
+                    backInfo : ["birthday", "membershipFee"]
+                });
+            secondBooklet.classList.add("fancyBooklet");
+            secondBooklet.setBarColor("blue"); 
+            firstBooklet.setBarColor("purple");
+            widgetContainer1.appendChild(firstBooklet);
+            widgetContainer2.appendChild(secondBooklet);
+        </script> 
+    </body>
+</html>

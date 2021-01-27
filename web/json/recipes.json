@@ -1,0 +1,59 @@
+[
+    {
+        "userEmail": "diane@gmail.com",
+        "userRoleType": "Admin",
+        "recipeId": "11",
+        "image": "pics/nachos.jpg",
+        "recipeName" : "Nachos",
+        "ingredients": "Tortilla Chips,\nGround Beef,\nSalsa,\nLettuce,\nCheese,\nSour Cream",
+        "cost": "11.00",
+        "typeOfRecipe": "Snack"
+        
+    },
+    
+    {
+        "userEmail": "alex@gmail.com",
+        "userRoleType": "Registered",
+        "recipeId": "12",
+        "image": "pics/fishtacos.jpg",
+        "recipeName" : "Fish Tacos",
+        "ingredients": "Cod,\nTaco Shells,\nFruit Salsa,\nCabbage",
+        "cost": "13.00",
+        "typeOfRecipe": "Dinner"
+    },
+    
+    {
+        "userEmail": "diane@gmail.com",
+        "userRoleType": "Admin",
+        "recipeId": "13",
+        "image": "pics/butternutsoup.jpg",
+        "recipeName" : "Butternut Squash Soup",
+        "ingredients": "Butternut Squash,\nCarrots,\nChicken Broth,\nParsley,\nOnion,\nGarlic,\nHalf and Half",
+        "cost": "9.00",
+        "typeOfRecipe": "Lunch"
+    },
+    
+    {
+        "userEmail": "jake@gmail.com",
+        "userRoleType": "Registered",
+        "recipeId": "14",
+        "image": "pics/frenchfries.jpg",
+        "recipeName" : "French Fries",
+        "ingredients": "Potatoes,\nVegetable Oil,\nSalt",
+        "cost": "5.00",
+        "typeOfRecipe": "Lunch"
+    },
+    
+    {
+        "userEmail": "emily@gmail.com",
+        "userRoleType": "Admin",
+        "recipeId": "15",
+        "image": "pics/spaghetti.jpg",
+        "recipeName" : "Spaghetti",
+        "ingredients": "Spaghetti Noodles,\nMeatballs,\nTomato Sauce,\nParmesan Cheese",
+        "cost": "6.00",
+        "typeOfRecipe": "Dinner"
+    }
+    
+
+]

@@ -1,0 +1,116 @@
+#navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    z-index: 100; 
+    width: 30rem; 
+    top:0rem;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+/* Style the navbar links */
+
+.headerItem {
+    list-style-type: none;
+    float:left; 
+    text-align: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: justify;
+    padding: 15px;
+    font-size: 17px;
+
+}
+
+
+.headerItem:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  position: fixed; 
+  top: 3rem;
+  z-index: -1; 
+  width: 30rem;
+  height: 13px; 
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  max-width: 30rem; 
+  background: #4caf50;
+  width: 0%;
+}
+
+#flipBoxesContainer {
+    position:static;
+    z-index: -1; 
+    top: 40%;
+    width: 30rem;
+    height: 30rem; 
+    float: left; 
+    overflow: scroll; 
+
+}
+.flip-box {
+    background-color: transparent;
+    width: 28rem;
+    height: 200px;
+    padding-top: 5rem; 
+    position: inherit;
+    z-index: -1; 
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    z-index: -1; 
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#container {
+    position: fixed;
+}
+#widgetContainer2 {
+    margin-left: 70%;
+}
+
+body {
+    background: lightpink;
+}
